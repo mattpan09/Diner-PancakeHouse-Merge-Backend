@@ -15,6 +15,6 @@ public class DinerRepository {
 //    }
 
     public Iterator<MenuItem> getTheMenuIterator() {
-        return (Iterator) new DinerMenu().createIterator();
+        return new DinerMenu().createIterator();
     }
 }

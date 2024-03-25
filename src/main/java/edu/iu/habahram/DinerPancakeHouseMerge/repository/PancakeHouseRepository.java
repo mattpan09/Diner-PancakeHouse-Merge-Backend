@@ -9,6 +9,6 @@ import java.util.Iterator;
 @Repository
 public class PancakeHouseRepository {
     public Iterator<MenuItem> getTheMenuIterator() {
-        return (Iterator<MenuItem>) new PancakeHouseMenu().createIterator();
+        return new PancakeHouseMenu().createIterator();
     }
 }
