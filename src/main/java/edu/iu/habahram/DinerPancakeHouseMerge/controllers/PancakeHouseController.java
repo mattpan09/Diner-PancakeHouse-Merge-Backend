@@ -1,5 +1,6 @@
 package edu.iu.habahram.DinerPancakeHouseMerge.controllers;
 
+import edu.iu.habahram.DinerPancakeHouseMerge.model.Iterator;
 import edu.iu.habahram.DinerPancakeHouseMerge.model.MenuItem;
 import edu.iu.habahram.DinerPancakeHouseMerge.repository.DinerRepository;
 import edu.iu.habahram.DinerPancakeHouseMerge.repository.PancakeHouseRepository;
@@ -20,8 +21,12 @@ public class PancakeHouseController {
         this.repository = repository;
     }
 
+//    @GetMapping
+//    public List<MenuItem> get() {
+//        return repository.get;
+//    }
     @GetMapping
-    public List<MenuItem> get() {
-        return repository.getTheMenu();
+    public Iterator get() {
+        return repository.getTheMenuIterator();
     }
 }

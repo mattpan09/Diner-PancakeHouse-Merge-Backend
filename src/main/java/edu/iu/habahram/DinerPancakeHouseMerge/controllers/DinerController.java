@@ -1,5 +1,6 @@
 package edu.iu.habahram.DinerPancakeHouseMerge.controllers;
 
+import edu.iu.habahram.DinerPancakeHouseMerge.model.Iterator;
 import edu.iu.habahram.DinerPancakeHouseMerge.model.MenuItem;
 import edu.iu.habahram.DinerPancakeHouseMerge.repository.DinerRepository;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -18,8 +19,13 @@ public class DinerController {
         this.repository = repository;
     }
 
+//    @GetMapping
+//    public MenuItem[] get() {
+//        return repository.getTheMenu();
+//    }
+
     @GetMapping
-    public MenuItem[] get() {
-        return repository.getTheMenu();
+    public Iterator get() {
+        return repository.getTheMenuIterator();
     }
 }
