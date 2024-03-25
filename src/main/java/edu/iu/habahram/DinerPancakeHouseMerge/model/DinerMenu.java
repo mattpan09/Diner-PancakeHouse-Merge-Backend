@@ -39,9 +39,18 @@ public class DinerMenu {
 //    public MenuItem[] getMenuItems() {
 //        return menuItems;
 //    }
+//    public Iterator createIterator() {
+////        return menuItems.iterator();
+////        return (Iterator) new DinerMenuIterator(menuItems);
+//        return (Iterator) new DinerMenuIterator(menuItems);
+//    }
+
     public Iterator createIterator() {
-        return new DinerMenuIterator(menuItems);
+        return (Iterator) new DinerMenuIterator(menuItems);
     }
+
+
+
 
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
