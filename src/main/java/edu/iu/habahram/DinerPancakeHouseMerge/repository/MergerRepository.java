@@ -10,9 +10,9 @@ import java.util.List;
 public class MergerRepository {
     public List<MenuItemRecord> getTheMenuItems() {
         MenuComponent allMenus = new Menu("ALL MENUS", "All menus combined");
-//        allMenus.add(new DinerMenu("DINER MENU", "Lunch"));
-//        allMenus.add(new PancakeHouseMenu("PANCAKE HOUSE MENU", "Breakfast"));
-//        allMenus.add(new CafeMenu("CAFE MENU", "Dinner"));
+        allMenus.add(new DinerMenu("DINER MENU", "Lunch"));
+        allMenus.add(new PancakeHouseMenu("PANCAKE HOUSE MENU", "Breakfast"));
+        allMenus.add(new CafeMenu("CAFE MENU", "Dinner"));
         allMenus.add(new DinerMenu());
         allMenus.add(new PancakeHouseMenu());
         allMenus.add(new CafeMenu());
