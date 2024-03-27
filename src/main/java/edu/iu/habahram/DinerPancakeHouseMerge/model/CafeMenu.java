@@ -2,9 +2,8 @@ package edu.iu.habahram.DinerPancakeHouseMerge.model;
 
 import java.util.HashMap;
 import java.util.Iterator;
-import java.util.Map;
 
-public class CafeMenu implements Menu {
+public class CafeMenu implements IMenu {
     HashMap<String, MenuItem> menuItems = new HashMap<String, MenuItem>();
 
     public CafeMenu() {
