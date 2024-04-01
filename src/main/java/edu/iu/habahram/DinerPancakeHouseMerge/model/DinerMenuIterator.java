@@ -12,7 +12,7 @@ public class DinerMenuIterator implements Iterator<MenuItem> {
 
     @Override
     public boolean hasNext() {
-        if(position >= menuItems.length || (menuItems[position] == null)) {
+        if (position >= menuItems.length || (menuItems[position] == null)) {
             return false;
         }
         return true;
